@@ -40,3 +40,25 @@
     background-color: #ebbfcb;
 }
 
+.main-header-container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.header-icon {
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/header-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
