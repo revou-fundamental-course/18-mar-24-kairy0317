@@ -174,8 +174,35 @@ input[type=email]:focus {
     background-color: #88b4d6
 }
 
+.main-action-container {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.main-action-container > button {
+    width: 300px;
+    height: 50px;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: #ebbfcb;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 50px;
+    background-color: #88b4d6;
+    text-align: center;
+    padding-top: 20px;
+    font-size: small;
+}
 
 button {
     cursor: pointer;
+}
+
+@media only screen add (max-width: 600px) {
 }
