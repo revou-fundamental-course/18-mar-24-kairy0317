@@ -24,12 +24,14 @@ function showSlide(n) {
 setInterval (() => nextSlide(1), 5000); // Dalam milisecond
 
 function submitForm() {
-    let form = document.forms["message-form"];
+    let form = document.forms["message-form"]; // Cara Mendapatkan Form
+     // Cara Mendapatkan Input
     let yourName = form["nama"].value;
     let yourEmail = form["email"].value;
     let yourRegion = form["domisili"].value;
     let yourPackage = form["perawatan"].value;
 
+    // Conditional Validation
     if (yourName == "" || yourEmail == "" || yourRegion == "" || yourPackage == ""){
         alert("Please fill the blank space")
     } else {
