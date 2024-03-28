@@ -16,8 +16,31 @@ function showSlide(n) {
     }
 
     listImage[indexSlide -1].style.display = "block"; // Menampilkan hanya 1 gambar
+
     console.log("jumlah gambar " + listImage.length);
     console.log("indexSlide " + indexSlide);
 }
 
 setInterval (() => nextSlide(1), 5000); // Dalam milisecond
+
+function submitForm() {
+    let form = document.forms["message-form"];
+    let yourName = form["nama"].value;
+    let yourEmail = form["email"].value;
+    let yourRegion = form["domisili"].value;
+    let yourPackage = form["perawatan"].value;
+
+    if (yourName == "" || yourEmail == "" || yourRegion == "" || yourPackage == ""){
+        alert("Please fill the blank space")
+    } else {
+        alert("Thankyou for submitting " + yourName)
+    }
+
+    console.log(form);
+    console.log(yourName);
+    console.log(yourEmail);
+    console.log(yourRegion);
+    console.log(yourPackage);
+}
+
+document.getElementById("submit-button").addEventListener("click", () => submitForm());
